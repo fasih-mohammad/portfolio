@@ -1,7 +1,6 @@
 import React from "react";
-import Tilt from "react-tilt";
+import Tilt from 'react-parallax-tilt';
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -15,9 +14,10 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  source_code_link1
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} onClick={() => window.open(source_code_link1, "_blank")}>
       <Tilt
         options={{
           max: 45,
@@ -97,4 +97,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "works");

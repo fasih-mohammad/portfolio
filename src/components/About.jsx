@@ -1,7 +1,6 @@
 import React from "react";
-import Tilt from "react-tilt";
+import Tilt from 'react-parallax-tilt';
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -47,11 +46,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm a proficient Full-Stack Web Developer specializing in the MERN stack (MongoDB, Express.js, React, and Node.js). With strong expertise in JavaScript and modern frameworks, I build dynamic, scalable, and high-performance web applications. I’m a fast learner, passionate about problem-solving, and committed to delivering user-friendly solutions. Let’s collaborate to turn your ideas into reality!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

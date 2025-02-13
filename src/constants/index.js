@@ -1,10 +1,7 @@
 import {
-  mobile,
   backend,
-  creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
@@ -13,16 +10,9 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
+  travelnest,
+  quizine,
   tripguide,
-  threejs,
 } from "../assets";
 
 export const navLinks = [
@@ -31,8 +21,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "works",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -46,17 +36,9 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
     title: "Backend Developer",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
+  }
 ];
 
 const technologies = [
@@ -71,10 +53,6 @@ const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
   },
   {
     name: "React JS",
@@ -97,147 +75,72 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  }
 ];
 
-const experiences = [
-  {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "TravelNest",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform for short-term vacation rentals, allowing users to list, search, and book homes seamlessly. Built with Express.js and Node.js for a robust backend, MongoDB for scalable data storage, and EJS for dynamic server-side rendering.",
+
     tags: [
       {
-        name: "react",
+        name: "express",
         color: "blue-text-gradient",
+      },
+      {
+        name: "node.js",
+        color: "green-text-gradient",
       },
       {
         name: "mongodb",
-        color: "green-text-gradient",
+        color: "yellow-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "ejs",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+
+    image: travelnest,
+    source_code_link: "https://github.com/fasih-mohammad/TravelNest",
+    source_code_link1: "https://wanderlust-kox1.onrender.com/listings",
   },
   {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
+    name: "Quizine",
+    description: 
+  "Quizine is a web application that generates short MCQ-type questions based on user input from text files and multiple PDFs. It includes user authentication and utilizes Python NLP techniques for question generation, with SQLite for efficient data storage.",
+
+tags: [
+  {
+    name: "python",
+    color: "blue-text-gradient",
+  },
+  {
+    name: "nlp",
+    color: "green-text-gradient",
+  },
+  {
+    name: "html",
+    color: "yellow-text-gradient",
+  },
+  {
+    name: "javascript",
+    color: "purple-text-gradient",
+  },
+  {
+    name: "sqlite",
+    color: "orange-text-gradient",
+  },
+],
+    image: quizine,
     source_code_link: "https://github.com/",
+    source_code_link1: "https://github.com/"
   },
   {
     name: "Trip Guide",
@@ -259,7 +162,8 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "https://github.com/",
+    source_code_link1: "https://github.com/"
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, projects };
